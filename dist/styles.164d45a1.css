@@ -1,0 +1,1406 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100vw;
+  position: absolute;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+main {
+  background-color: #FFF5EC;
+  position: absolute;
+  display: flex;
+  min-width: 0;
+  width: 100vw;
+  flex-direction: column;
+  height: fit-content;
+}
+main .fpage {
+  min-width: 62em;
+  position: relative;
+}
+main .fpage .menu {
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  width: 85vw;
+  min-width: 78em;
+  position: relative;
+  margin: 20px auto;
+}
+main .fpage .menu img {
+  position: absolute;
+  width: 15em;
+  left: -8em;
+  top: -5em;
+  transform: rotate(350deg);
+}
+main .fpage .menu h2 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: auto 50px auto 20px;
+  color: #FE043C;
+  font-size: 2.5rem;
+  z-index: 1;
+  line-height: 0;
+}
+main .fpage .menu a {
+  text-decoration: none;
+  color: #2E266F;
+  margin-left: 20px;
+  line-height: 2;
+}
+main .fpage .menu i {
+  margin-left: auto;
+  margin-right: 5px;
+  line-height: 1.5;
+  z-index: 2;
+}
+main .fpage .menu span {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-right: 5em;
+  line-height: 1.5;
+  z-index: 2;
+}
+main .fpage .menu .red {
+  position: absolute;
+  width: 25vw;
+  height: 100vh;
+  min-height: 39em;
+  top: -20px;
+  z-index: 1;
+  margin: 0;
+  left: calc(100% - 20vw - 8px);
+  background-color: #FE043C;
+}
+@media only screen and (max-width: 968px) {
+  main .fpage {
+    min-width: 0;
+    width: 100vw;
+  }
+  main .fpage .menu {
+    min-width: 0;
+    width: 100vw;
+    top: 4em;
+    left: 1.5em;
+    margin: 0;
+  }
+  main .fpage .menu h2 {
+    position: absolute;
+    top: -1em;
+  }
+  main .fpage .menu img {
+    top: -4em;
+    width: 9em;
+    left: -6.5em;
+  }
+  main .fpage .menu a {
+    font-size: 0.6em;
+    z-index: 2;
+    margin-left: 1em;
+  }
+  main .fpage .menu i {
+    font-size: 0.7em;
+  }
+  main .fpage .menu span {
+    font-size: 0.6em;
+  }
+  main .fpage .menu .red {
+    left: calc(100% - 25vw - 1.5em);
+    top: -4em;
+    height: 28em;
+    min-height: 0;
+  }
+}
+main .spage {
+  height: calc(100vh - 70px);
+  min-height: 34em;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main .spage .left {
+  height: 80%;
+  flex-basis: 45%;
+  margin: auto 0;
+  padding-left: 5em;
+}
+main .spage .left h2 {
+  opacity: 0.05;
+  font-size: 6.2rem;
+  position: absolute;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+main .spage .left h3 {
+  font-size: 3.2rem;
+  position: relative;
+  line-height: 1;
+  top: 2.1em;
+  text-transform: capitalize;
+  color: #2E266F;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+main .spage .left div {
+  position: relative;
+  top: 7em;
+  height: fit-content;
+  width: fit-content;
+  padding: 4px;
+  box-shadow: 0px 3px 50px rgba(255, 112, 112, 0.16);
+  background-color: white;
+}
+main .spage .left div input[type=text] {
+  border: none;
+  height: 2.8em;
+  width: 20em;
+  padding-left: 20px;
+  outline: none;
+}
+main .spage .left div input[type=button] {
+  height: 2.8em;
+  background-color: #FE043C;
+  width: 7em;
+  cursor: pointer;
+  color: white;
+  border: none;
+  border-radius: 50px 0 0 0;
+}
+main .spage .left .label {
+  position: absolute;
+  left: 0;
+  height: 1.7em;
+  width: 10em;
+  background-color: #FE043C;
+  top: 26.5em;
+  border-radius: 0 20px 20px 0;
+}
+main .spage .left .label i, main .spage .left .label span {
+  color: white;
+  margin-left: 1.5em;
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+main .spage .right {
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  flex-basis: 45%;
+  margin: auto 0;
+}
+main .spage .right .dots {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  position: relative;
+  flex-basis: 50%;
+}
+main .spage .right .dots img {
+  position: relative;
+  height: 48%;
+}
+main .spage .right .plate {
+  height: 80vh;
+  position: absolute;
+}
+main .spage .right .plate .img {
+  cursor: grab;
+}
+main .spage .right .plate img {
+  width: 32em;
+  position: relative;
+  z-index: 2;
+}
+main .spage .right .plate .lettuce {
+  width: 25em;
+  position: relative;
+  top: -36.5em;
+  left: 0em;
+  transform: rotate(330deg);
+  z-index: 1;
+}
+main .spage .right .plate .arrow {
+  position: absolute;
+  top: 30em;
+  left: 28em;
+  width: 2em;
+}
+main .spage .right .plate .rarrow {
+  position: absolute;
+  top: 30em;
+  left: 25em;
+  width: 2em;
+}
+@media only screen and (max-width: 968px) {
+  main .spage {
+    flex-direction: column-reverse;
+    height: 100vh;
+    margin: 3em 0;
+    width: fit-content;
+  }
+  main .spage .left {
+    margin: 0;
+    flex-basis: 40%;
+    width: 100vw;
+    min-width: 0;
+    padding-left: 1em;
+  }
+  main .spage .left .label {
+    top: 20em;
+  }
+  main .spage .left h2 {
+    font-size: 4rem;
+  }
+  main .spage .left h3 {
+    font-size: 2rem;
+  }
+  main .spage .left div {
+    top: 6em;
+  }
+  main .spage .left div input[type=text] {
+    width: 15em;
+  }
+  main .spage .right {
+    margin: 0;
+    margin: 3em 0 0 0;
+    flex-basis: 45%;
+    width: fit-content;
+  }
+  main .spage .right .nomo {
+    display: none;
+  }
+  main .spage .right .dots {
+    flex-basis: 0;
+    height: 16em;
+    left: 5em;
+  }
+  main .spage .right .dots img {
+    height: 100%;
+  }
+  main .spage .right .plate {
+    height: fit-content;
+  }
+  main .spage .right .plate .lettuce {
+    top: -2em;
+    width: 12em;
+    left: 8em;
+    transform: rotate(350deg);
+  }
+  main .spage .right .plate .arrow {
+    top: 18em;
+    left: 20em;
+  }
+  main .spage .right .plate .rarrow {
+    top: 18em;
+    left: 17.3em;
+  }
+  main .spage .right .img {
+    height: 15em;
+    width: 15em !important;
+    position: absolute !important;
+    left: 5em;
+  }
+}
+main .tpage {
+  height: 100vh;
+  min-height: 39em;
+  width: 100vw;
+  position: relative;
+}
+main .tpage .sec1 {
+  height: 25vh;
+  min-height: 9em;
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+  min-width: 70em;
+  margin: 2em auto 0;
+}
+main .tpage .sec1 h2 {
+  font-size: 2rem;
+  color: #2E266F;
+  line-height: 0.85;
+  height: fit-content;
+  padding-left: 1.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  flex-basis: 50%;
+  border-left: 10px solid #FE043C;
+}
+main .tpage .sec1 p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-left: 2em;
+  flex-basis: 50%;
+  font-size: 1.1rem;
+  color: #707070;
+}
+main .tpage .sec2 {
+  height: fit-content;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  width: 90vw;
+  margin: 0 2em;
+}
+main .tpage .sec2 .img {
+  height: 25em;
+  margin-right: 2em;
+  position: relative;
+}
+main .tpage .sec2 .img img {
+  margin-right: 20px;
+  height: 25em;
+  width: 25em;
+  z-index: 1;
+  position: relative;
+}
+main .tpage .sec2 .img .dots {
+  position: absolute;
+  top: -2.5em;
+  left: -1em;
+  z-index: 0;
+}
+main .tpage .sec2 .img .dots img {
+  height: 15em;
+  width: 15em;
+}
+main .tpage .sec2 .img .dots2 {
+  position: absolute;
+  z-index: 0;
+  top: 11em;
+  left: 11em;
+  height: fit-content;
+}
+main .tpage .sec2 .img .dots2 img {
+  height: 15em;
+  width: 15em;
+}
+main .tpage .sec2 .img .ban {
+  position: absolute;
+  background-color: rgba(254, 4, 60, 0.69);
+  height: 40%;
+  top: 60%;
+  width: 25em;
+  z-index: 1;
+  border-radius: 10px;
+}
+main .tpage .sec2 .img .ban div {
+  margin: 20px 30px;
+}
+main .tpage .sec2 .img .ban div h2 {
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 2.5rem;
+}
+main .tpage .sec2 .img .ban div h4 {
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 0.7rem;
+  line-height: 1.2;
+}
+main .tpage .sec2 .img .ban div div {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  height: 2.5em;
+  margin: 13px auto;
+}
+main .tpage .sec2 .img .ban div div i {
+  margin-right: 5px;
+  zoom: 1.5;
+}
+main .tpage .sec2 .img .ban div div span {
+  margin-right: auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+main .tpage .sec2 .img .ban div div h4, main .tpage .sec2 .img .ban div div .bar {
+  background-color: white;
+  color: #E3345F;
+  padding: 5px 5px 5px 15px;
+}
+main .tpage .sec2 .img .ban div div h4 {
+  line-height: 2;
+  font-size: 1em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+main .tpage .sec2 .img .ban div div .bar {
+  border-radius: 0 0 5px 0;
+}
+main .tpage .sec2 .ar {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  margin: auto;
+}
+main .tpage .sec2 .ar i {
+  height: 1.6em;
+  color: #FE043C;
+  margin: 0 auto;
+}
+main .tpage .sec2 .ar h4 {
+  color: #FE043C;
+}
+@media only screen and (max-width: 968px) {
+  main .tpage {
+    height: 70vh;
+    width: 100vw;
+    min-height: 0;
+  }
+  main .tpage .sec1 {
+    flex-direction: column;
+    height: 20vh;
+    width: 100vw;
+    min-width: 0;
+    justify-content: space-between;
+  }
+  main .tpage .sec1 h2 {
+    line-height: 2.5;
+    font-size: 1rem;
+    padding-left: 1.5rem;
+    flex-basis: 30%;
+  }
+  main .tpage .sec1 p {
+    flex-basis: 60%;
+    width: calc(100vw - 2em);
+    font-size: 0.7rem;
+  }
+  main .tpage .sec2 {
+    margin: 2em 1em;
+  }
+  main .tpage .sec2 .nomo {
+    display: none;
+  }
+  main .tpage .sec2 .img {
+    height: 10em;
+    margin-right: 0;
+  }
+  main .tpage .sec2 .img .dots {
+    top: -1em;
+    left: -0.5em;
+  }
+  main .tpage .sec2 .img .dots img {
+    height: 6em;
+    width: 5em;
+    border-radius: 5px;
+  }
+  main .tpage .sec2 .img img {
+    width: 10em;
+    height: 10em;
+  }
+  main .tpage .sec2 .img .ban {
+    top: 60%;
+    width: 10em;
+    border-radius: 5px;
+  }
+  main .tpage .sec2 .img .ban div {
+    margin: 5px 5px;
+  }
+  main .tpage .sec2 .img .ban div h2 {
+    font-size: 0.7rem;
+  }
+  main .tpage .sec2 .img .ban div h4 {
+    font-size: 0.5rem;
+  }
+  main .tpage .sec2 .img .ban div div {
+    height: 1em;
+    margin: 5px 0 0;
+  }
+  main .tpage .sec2 .img .ban div div i {
+    zoom: 0.5;
+  }
+  main .tpage .sec2 .img .ban div div span {
+    font-weight: 500;
+    font-size: 0.5rem;
+  }
+  main .tpage .sec2 .img .ban div div h4 {
+    font-size: 0.5em;
+    line-height: 0.5;
+    font-weight: 400;
+  }
+}
+main .fopage {
+  height: 90vh;
+  min-height: 35em;
+  display: flex;
+  position: relative;
+  z-index: 0;
+  flex-direction: row;
+  background-color: #FFEDDE;
+}
+main .fopage .llettuce {
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  left: -11em;
+  z-index: 1;
+}
+main .fopage .llettuce img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+main .fopage .maintab {
+  position: relative;
+  flex-basis: 70%;
+  margin: 0 auto;
+}
+main .fopage .maintab .board {
+  background-color: white;
+  width: 90%;
+  height: 15em;
+  padding-top: 5%;
+  position: relative;
+  margin: 0 auto;
+  top: 23%;
+}
+main .fopage .maintab .board .dimg {
+  position: absolute;
+  height: 15em;
+  width: 30%;
+  height: 100%;
+  bottom: 0;
+  z-index: -1;
+}
+main .fopage .maintab .board img {
+  height: 15em;
+  position: absolute;
+}
+main .fopage .maintab .board .left {
+  bottom: -2.3em;
+}
+main .fopage .maintab .board .right {
+  margin-left: calc(100% + 21em);
+  top: -2.3em;
+}
+main .fopage .maintab .board div {
+  width: 50%;
+  height: 80%;
+  margin: auto;
+}
+main .fopage .maintab .board div .hred {
+  background-color: red;
+  width: 17%;
+  height: 0.6em;
+  margin-bottom: 1em;
+}
+main .fopage .maintab .board div h2 {
+  margin: 0 auto;
+  color: #2E266F;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 2rem;
+  width: fit-content;
+  position: relative;
+}
+main .fopage .maintab .board div .ltab {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 20%;
+}
+main .fopage .maintab .board div .ltab div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+main .fopage .maintab .board div .ltab div h4 {
+  color: #2E266F;
+  font-size: 0.8rem;
+  font-family: sans-serif;
+}
+main .fopage .maintab .board div .ltab div h4 i {
+  color: #FE043C;
+  zoom: 0.8;
+}
+main .fopage .maintab .board div .ltab div p {
+  color: rgba(46, 38, 111, 0.59);
+  font-size: 0.7rem;
+  font-family: sans-serif;
+  margin-top: 3.5px;
+}
+main .fopage .maintab .board div .search {
+  background-color: white;
+  background-color: white;
+  margin: 1.5em 1em;
+  width: fit-content;
+  height: fit-content;
+  padding: 0 8px;
+  box-shadow: 0px 0px 20px rgba(255, 112, 112, 0.16);
+}
+main .fopage .maintab .board div .search input[type=text] {
+  height: 3.5em;
+  width: 18em;
+  border: none;
+  outline: none;
+  padding: 0 0 0 16px;
+}
+main .fopage .maintab .board div .search input[type=button] {
+  height: 2.5em;
+  width: 6em;
+  color: white;
+  cursor: pointer;
+  background-color: #FE043C;
+  border: none;
+}
+main .fopage .rlettuce {
+  position: absolute;
+  width: 30%;
+  left: calc(100% - 20%);
+  height: 70%;
+  margin-top: 5em;
+}
+main .fopage img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: rotate(360deg);
+}
+@media only screen and (max-width: 968px) {
+  main .fopage {
+    width: 100vw;
+    min-height: 0;
+    height: 30em;
+  }
+  main .fopage .llettuce {
+    width: 15em;
+    height: 15em;
+    left: -10em;
+    top: 7em;
+  }
+  main .fopage .maintab .board {
+    width: 90vw;
+    height: 12em;
+  }
+  main .fopage .maintab .board .dimg {
+    width: 15em;
+    height: 15em;
+  }
+  main .fopage .maintab .board .dimg .right {
+    margin-left: calc(100% - 10em);
+    top: -0.5em;
+  }
+  main .fopage .maintab .board div {
+    width: 100%;
+  }
+  main .fopage .maintab .board div h2 {
+    font-size: 1rem;
+  }
+  main .fopage .maintab .board div .hred {
+    height: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  main .fopage .maintab .board div .ltab {
+    width: 100%;
+  }
+  main .fopage .maintab .board div .search input[type=text] {
+    width: 14em;
+  }
+  main .fopage .maintab .board div .search input[type=button] {
+    width: 5em;
+  }
+  main .fopage .rlettuce {
+    width: 15em;
+    height: 15em;
+    margin-top: 7em;
+  }
+}
+main .fipage {
+  height: 150vh;
+  min-height: 58em;
+  background-color: #FFF5EC;
+  position: relative;
+  z-index: 0;
+}
+main .fipage .sec1 {
+  margin: 8em auto;
+  width: 80vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+}
+main .fipage .sec1 h2 {
+  flex-basis: 40%;
+  height: fit-content;
+  border-left: 15px solid #FE043C;
+  padding-left: 1.2em;
+  color: #2E266F;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.2;
+}
+main .fipage .sec1 p {
+  flex-basis: 60%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+main .fipage .sec2 {
+  width: 80%;
+  margin: 9em auto;
+  height: 50%;
+  display: grid;
+  grid-column-gap: 1.7em;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "b1 b2 big big" "b3 b4 big big";
+}
+main .fipage .sec2 .background {
+  position: absolute;
+  height: 70%;
+  width: 100vw;
+  left: 0;
+  top: 15em;
+  z-index: -1;
+}
+main .fipage .sec2 .mono {
+  display: none;
+}
+main .fipage .sec2 .b1 {
+  grid-area: b1;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #FFEDDE;
+}
+main .fipage .sec2 .b1 img {
+  margin: auto;
+  height: 50%;
+  width: 50%;
+}
+main .fipage .sec2 .b2 {
+  grid-area: b2;
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 1em;
+}
+main .fipage .sec2 .b2 img {
+  position: absolute;
+  left: -4.5em;
+  width: 40%;
+}
+main .fipage .sec2 .b2 div {
+  width: 80%;
+}
+main .fipage .sec2 .b2 div h3 {
+  color: #2E266F;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.5em;
+  line-height: 1;
+  position: relative;
+}
+main .fipage .sec2 .b2 div h3 img {
+  line-height: 0;
+  height: 0.15em;
+  color: red;
+  margin-right: 1em;
+  bottom: 15%;
+  left: auto;
+  right: 0;
+  position: absolute;
+}
+main .fipage .sec2 .b2 div h3 .short {
+  width: 0.5em;
+  margin-right: 0.2em;
+}
+main .fipage .sec2 .b2 div p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1em;
+  color: #707070;
+  margin-top: 0.7em;
+}
+main .fipage .sec2 .b3 {
+  grid-area: b3;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+}
+main .fipage .sec2 .b3 img {
+  position: absolute;
+  left: 85%;
+  width: 45%;
+}
+main .fipage .sec2 .b3 div {
+  display: flex;
+  flex-direction: column;
+}
+main .fipage .sec2 .b3 div h3 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #2E266F;
+  font-size: 1.7em;
+}
+main .fipage .sec2 .b3 div h3 img {
+  width: 35%;
+  height: 0.15em;
+  position: relative;
+  margin-right: 0.3em;
+  margin-top: 0;
+  left: 0;
+}
+main .fipage .sec2 .b3 div h3 .short {
+  width: 5%;
+}
+main .fipage .sec2 .b3 div p {
+  color: #707070;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+main .fipage .sec2 .b4 {
+  grid-area: b4;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #FFEDDE;
+}
+main .fipage .sec2 .b4 img {
+  margin: auto;
+  height: 50%;
+  width: 50%;
+}
+main .fipage .sec2 .big {
+  grid-area: big;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background-color: #FFEDDE;
+}
+main .fipage .sec2 .big img {
+  margin: 0 auto 1.8em;
+  width: 35%;
+}
+main .fipage .sec2 .big h3 {
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #2E266F;
+  font-size: 1.8em;
+  line-height: 1;
+}
+main .fipage .sec2 .big p {
+  margin: 1em auto;
+  font-size: 1em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+main .fipage .sec2 .big div {
+  margin: 1em auto;
+  display: flex;
+  height: 0;
+  flex-direction: row;
+}
+main .fipage .sec2 .big div h2 {
+  border: 2px solid red;
+  text-align: center;
+  line-height: 0.1em;
+  width: 4em;
+  margin-left: 0.3em;
+}
+main .fipage .sec2 .big div .short {
+  width: 0.6em;
+}
+@media only screen and (max-width: 968px) {
+  main .fipage {
+    width: 100vw;
+    height: fit-content;
+  }
+  main .fipage .sec1 {
+    flex-direction: column;
+    height: 10em;
+    justify-content: space-between;
+    margin: 3em auto;
+  }
+  main .fipage .sec1 h2 {
+    font-size: 1.2rem;
+    flex-basis: 30%;
+  }
+  main .fipage .sec1 p {
+    font-size: 0.8rem;
+    flex-basis: 60%;
+  }
+  main .fipage .sec2 {
+    grid-column-gap: 0;
+    grid-row-gap: 1em;
+    margin: 5em auto 0;
+    height: fit-content;
+    position: relative;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "b1 b2" "b3 b4" "big big" "big big";
+  }
+  main .fipage .sec2 .big {
+    justify-content: normal;
+    height: fit-content;
+  }
+  main .fipage .sec2 .big img {
+    margin: 1.5em auto 1.8em;
+  }
+  main .fipage .sec2 .b2 div h3 {
+    font-size: 1em;
+  }
+  main .fipage .sec2 .b2 div h3 .line {
+    width: 2em;
+  }
+  main .fipage .sec2 .b2 div img {
+    left: -2em;
+  }
+  main .fipage .sec2 .b2 img {
+    left: -2.1em;
+  }
+  main .fipage .sec2 .b3 div h3 {
+    font-size: 1.2em;
+  }
+  main .fipage .sec2 .background {
+    display: none;
+  }
+  main .fipage .sec2 .mono {
+    display: block;
+    position: absolute;
+    width: 100vw;
+    left: -12%;
+    top: -2em;
+    height: 38.5em;
+    z-index: -1;
+  }
+}
+main .sipage {
+  height: 140vh;
+  min-height: 54em;
+  color: #FFF5EC;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3em;
+  align-content: center;
+  margin-top: 4em;
+}
+main .sipage h2 {
+  color: #2E266F;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  justify-self: center;
+  align-self: center;
+}
+main .sipage p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #AEB2B4;
+  justify-self: center;
+  align-self: center;
+  width: 60%;
+  text-align: center;
+}
+main .sipage div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "t1 t2 t3" "t4 t5 t6";
+  height: fit-content;
+  width: 65%;
+  justify-self: center;
+  align-self: center;
+  position: relative;
+  grid-column-gap: 1em;
+  grid-row-gap: 2em;
+}
+main .sipage div .t1 {
+  grid-area: t1;
+}
+main .sipage div .t1, main .sipage div .t2, main .sipage div .t3, main .sipage div .t4, main .sipage div .t5, main .sipage div .t6 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-self: auto;
+  justify-self: auto;
+  grid-row-gap: 0;
+  height: 100%;
+  width: auto;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px #EBF1F5;
+}
+main .sipage div .t1 img, main .sipage div .t2 img, main .sipage div .t3 img, main .sipage div .t4 img, main .sipage div .t5 img, main .sipage div .t6 img {
+  height: 65%;
+  width: 100%;
+}
+main .sipage div .t1 div, main .sipage div .t2 div, main .sipage div .t3 div, main .sipage div .t4 div, main .sipage div .t5 div, main .sipage div .t6 div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: fit-content;
+  margin-top: 0.5em;
+  justify-content: space-between;
+}
+main .sipage div .t1 div h3, main .sipage div .t2 div h3, main .sipage div .t3 div h3, main .sipage div .t4 div h3, main .sipage div .t5 div h3, main .sipage div .t6 div h3 {
+  color: black;
+  font-family: sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 2;
+  margin-left: 1.5em;
+}
+main .sipage div .t1 div h2, main .sipage div .t2 div h2, main .sipage div .t3 div h2, main .sipage div .t4 div h2, main .sipage div .t5 div h2, main .sipage div .t6 div h2 {
+  font-size: 1.4em;
+  color: #F98169;
+  margin-right: 1.5em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+main .sipage div .t1 p, main .sipage div .t2 p, main .sipage div .t3 p, main .sipage div .t4 p, main .sipage div .t5 p, main .sipage div .t6 p {
+  font-size: 0.7em;
+  text-align: left;
+  width: fit-content;
+  margin: 0.8em 1.2em;
+}
+main .sipage div .t2 {
+  grid-area: t2;
+}
+main .sipage div .t3 {
+  grid-area: t3;
+}
+main .sipage div .t4 {
+  grid-area: t4;
+}
+main .sipage div .t5 {
+  grid-area: t5;
+}
+main .sipage div .t6 {
+  grid-area: t6;
+}
+@media only screen and (max-width: 968px) {
+  main .sipage {
+    width: 100vw;
+    height: fit-content;
+    row-gap: 0;
+    min-height: 0;
+    margin-top: 0;
+  }
+  main .sipage h2 {
+    font-size: 1rem;
+    margin: 1em;
+  }
+  main .sipage p {
+    font-size: 0.5rem;
+    margin: 1em;
+  }
+  main .sipage div {
+    width: fit-content;
+    margin: 1em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "t1 t2" "t4 t5" "t3 t6";
+  }
+  main .sipage div .t1, main .sipage div .t2, main .sipage div .t3, main .sipage div .t4, main .sipage div .t5, main .sipage div .t6 {
+    height: 12em;
+    margin: 0;
+    width: 10em;
+  }
+  main .sipage div .t1 div, main .sipage div .t2 div, main .sipage div .t3 div, main .sipage div .t4 div, main .sipage div .t5 div, main .sipage div .t6 div {
+    margin: 0.5em 0 0 0;
+  }
+  main .sipage div .t1 div h3, main .sipage div .t2 div h3, main .sipage div .t3 div h3, main .sipage div .t4 div h3, main .sipage div .t5 div h3, main .sipage div .t6 div h3 {
+    font-size: 0.6em;
+  }
+  main .sipage div .t1 div h2, main .sipage div .t2 div h2, main .sipage div .t3 div h2, main .sipage div .t4 div h2, main .sipage div .t5 div h2, main .sipage div .t6 div h2 {
+    font-size: 0.8em;
+    margin: 0 1.5em 0 0;
+  }
+  main .sipage div .t1 p, main .sipage div .t2 p, main .sipage div .t3 p, main .sipage div .t4 p, main .sipage div .t5 p, main .sipage div .t6 p {
+    font-size: 0.4em;
+  }
+}
+main .sepage {
+  height: 90vh;
+  min-height: 35em;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+main .sepage div {
+  flex-basis: 35%;
+  height: 85%;
+  margin: auto 0;
+}
+main .sepage .d1 {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0 auto auto;
+  height: fit-content;
+  width: fit-content;
+  position: relative;
+  gap: 2em;
+}
+main .sepage .d1 h2 {
+  color: #2E266F;
+  font-size: 2em;
+  border-left: 15px solid #FE043C;
+  padding-left: 1em;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1;
+}
+main .sepage .d1 p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #707070;
+  width: 100%;
+  margin-right: auto;
+  padding-left: 3em;
+}
+main .sepage .d1 div {
+  height: fit-content;
+}
+main .sepage .d1 div img {
+  margin: 1em 0.5em;
+  position: relative;
+  left: 2em;
+  height: 3em;
+}
+main .sepage .d2 {
+  margin: auto auto auto 0;
+  height: 90%;
+  flex-basis: 29%;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+}
+main .sepage .d2 .dots {
+  position: absolute;
+  height: 15em;
+  top: 4em;
+  left: 5em;
+}
+main .sepage .d2 .lettuce {
+  position: absolute;
+  height: 20em;
+  top: 25%;
+}
+main .sepage .d2 .phone {
+  position: relative;
+  height: 100%;
+  margin: 0 0 0 auto;
+}
+@media only screen and (max-width: 968px) {
+  main .sepage {
+    width: 100vw;
+    flex-direction: column-reverse;
+    min-height: 0;
+    height: fit-content;
+    gap: 0;
+    margin-top: 5em;
+  }
+  main .sepage .d2 {
+    height: fit-content;
+    width: 100%;
+  }
+  main .sepage .d2 .dots {
+    height: 8em;
+    top: 4em;
+    left: 4em;
+  }
+  main .sepage .d2 .lettuce {
+    top: 6em;
+    left: 1em;
+    width: 12em;
+    height: 12em;
+  }
+  main .sepage .d2 .phone {
+    width: 12em;
+    margin: 0 auto;
+    height: 20em;
+  }
+  main .sepage .d1 {
+    margin: 3em auto;
+    gap: 0;
+  }
+  main .sepage .d1 h2 {
+    margin: 0 0 1em 2em;
+    font-size: 1em;
+  }
+  main .sepage .d1 p {
+    margin: 0 0 1em 0;
+    font-size: 0.8em;
+  }
+  main .sepage .d1 div img {
+    margin: 0em 0.5em;
+    height: 2em;
+  }
+}
+main .epage {
+  background-color: #FFF5EC;
+  height: 90vh;
+  min-height: 32em;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+main .epage .img {
+  position: absolute;
+  height: 34em;
+  left: -5em;
+  top: 5em;
+  transform: scaleX(-1) rotate(290deg);
+}
+main .epage div {
+  height: 70%;
+  top: 15%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+main .epage div h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 2em;
+  color: #273164;
+  text-align: center;
+  line-height: 1.5;
+}
+main .epage div p {
+  color: #273164;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.7em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+main .epage div .search {
+  background-color: white;
+  height: 2.5em;
+  width: fit-content;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  margin: 0 auto;
+  box-shadow: 0 0px 20px rgba(161, 161, 161, 0.51);
+  border-radius: 20px;
+}
+main .epage div .search input[type=text] {
+  height: 100%;
+  width: 15em;
+  padding-left: 1.5em;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+}
+main .epage div .search img {
+  cursor: pointer;
+  position: relative;
+  top: -10%;
+  height: 130%;
+  -webkit-user-drag: none;
+}
+main .epage div .contact {
+  height: fit-content;
+  width: 40%;
+  display: block;
+}
+main .epage div .contact ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+main .epage div .contact ul li {
+  font-size: 0.7em;
+  color: #273164;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+main .epage div .icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 0 0 auto;
+  position: relative;
+  height: fit-content;
+  width: 50%;
+  left: 40%;
+}
+main .epage div .icons p {
+  width: fit-content;
+  color: #273164;
+  margin: 0;
+  font-size: 0.6em;
+}
+@media only screen and (max-width: 968px) {
+  main .epage {
+    width: 100vw;
+    height: fit-content;
+    min-height: 0;
+  }
+  main .epage .img {
+    top: 2em;
+    height: 15em;
+  }
+  main .epage div {
+    margin: 3em auto 1em;
+    row-gap: 0;
+    top: 0;
+  }
+  main .epage div h2 {
+    font-size: 1em;
+    margin: 1em;
+  }
+  main .epage div p {
+    width: 80%;
+    margin: 1em auto;
+    font-size: 0.5em;
+  }
+  main .epage div .search {
+    margin: 1em auto;
+    height: auto;
+  }
+  main .epage div .search input[type=text] {
+    width: 12em;
+    height: auto;
+  }
+  main .epage div .search img {
+    height: 2.5em;
+    top: 0.15%;
+  }
+  main .epage div .contact {
+    margin: 1em auto;
+    width: 70%;
+  }
+  main .epage div .contact ul li {
+    font-size: 0.6em;
+  }
+  main .epage div .icons {
+    left: 0;
+    margin: 1em 0 0 auto;
+  }
+  main .epage div .icons i {
+    font-size: 0.6rem;
+  }
+}
+main .footer {
+  background-color: #fe043c;
+  height: 7em;
+  border-top: 2px solid blue;
+  z-index: 1;
+}
+main .footer h1, main .footer p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  margin: 1em auto;
+  font-size: 1.2em;
+}
+main .footer p {
+  font-size: 0.7em;
+}
+@media only screen and (max-width: 968px) {
+  main .footer {
+    width: 100vw;
+    height: 5em;
+    position: relative;
+  }
+  main .footer h1 {
+    font-size: 1em;
+  }
+  main .footer p {
+    font-size: 0.5em;
+  }
+}
+
+/*# sourceMappingURL=/styles.164d45a1.css.map */
