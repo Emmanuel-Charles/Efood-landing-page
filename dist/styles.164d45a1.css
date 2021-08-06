@@ -10,6 +10,10 @@ html, body {
   overflow-x: hidden;
 }
 
+img {
+  -webkit-user-drag: none;
+}
+
 main {
   background-color: #FFF5EC;
   position: absolute;
@@ -27,7 +31,7 @@ main {
   height: fit-content;
 }
 main .fpage {
-  min-width: 62em;
+  min-width: 1200px;
   position: relative;
 }
 main .fpage .menu {
@@ -81,19 +85,20 @@ main .fpage .menu span {
 }
 main .fpage .menu .red {
   position: absolute;
-  width: 25vw;
+  width: 25%;
   height: 100vh;
   min-height: 39em;
   top: -20px;
   z-index: 1;
   margin: 0;
-  left: calc(100% - 20vw - 8px);
+  left: calc(80% - 8px);
   background-color: #FE043C;
 }
-@media only screen and (max-width: 968px) {
+@media only screen and (max-width: 480px) {
   main .fpage {
     min-width: 0;
     width: 100vw;
+    min-width: 0;
   }
   main .fpage .menu {
     min-width: 0;
@@ -132,6 +137,7 @@ main .fpage .menu .red {
 main .spage {
   height: calc(100vh - 70px);
   min-height: 34em;
+  min-width: 1200px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -238,7 +244,7 @@ main .spage .right .dots {
   justify-content: space-between;
   position: relative;
   -ms-flex-preferred-size: 50%;
-  flex-basis: 50%;
+  flex-basis: 60%;
 }
 main .spage .right .dots img {
   position: relative;
@@ -279,7 +285,7 @@ main .spage .right .plate .rarrow {
   left: 25em;
   width: 2em;
 }
-@media only screen and (max-width: 968px) {
+@media only screen and (max-width: 480px) {
   main .spage {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -287,6 +293,7 @@ main .spage .right .plate .rarrow {
     flex-direction: column-reverse;
     height: 100vh;
     margin: 3em 0;
+    min-width: 0;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
@@ -367,6 +374,7 @@ main .tpage {
   height: 100vh;
   min-height: 39em;
   width: 100vw;
+  min-width: 1200px;
   position: relative;
 }
 main .tpage .sec1 {
@@ -530,12 +538,14 @@ main .tpage .sec2 .ar i {
 }
 main .tpage .sec2 .ar h4 {
   color: #FE043C;
+  white-space: nowrap;
 }
-@media only screen and (max-width: 968px) {
+@media only screen and (max-width: 480px) {
   main .tpage {
     height: 70vh;
     width: 100vw;
     min-height: 0;
+    min-width: 0;
   }
   main .tpage .sec1 {
     -webkit-box-orient: vertical;
@@ -619,6 +629,7 @@ main .tpage .sec2 .ar h4 {
 main .fopage {
   height: 90vh;
   min-height: 35em;
+  min-width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -741,6 +752,8 @@ main .fopage .maintab .board div .search {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  display: flex;
+  flex-direction: row;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -760,6 +773,7 @@ main .fopage .maintab .board div .search input[type=button] {
   width: 6em;
   color: white;
   cursor: pointer;
+  margin: auto;
   background-color: #FE043C;
   border: none;
 }
@@ -778,11 +792,12 @@ main .fopage img {
   -ms-transform: rotate(360deg);
   transform: rotate(360deg);
 }
-@media only screen and (max-width: 968px) {
+@media only screen and (max-width: 480px) {
   main .fopage {
     width: 100vw;
     min-height: 0;
     height: 30em;
+    min-width: 0;
   }
   main .fopage .llettuce {
     width: 15em;
@@ -830,6 +845,7 @@ main .fopage img {
 main .fipage {
   height: 150vh;
   min-height: 58em;
+  min-width: 1200px;
   background-color: #FFF5EC;
   position: relative;
   z-index: 0;
@@ -1080,12 +1096,13 @@ main .fipage .sec2 .big div h2 {
 main .fipage .sec2 .big div .short {
   width: 0.6em;
 }
-@media only screen and (max-width: 968px) {
+@media only screen and (max-width: 480px) {
   main .fipage {
     width: 100vw;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+    min-width: 0;
   }
   main .fipage .sec1 {
     -webkit-box-orient: vertical;
@@ -1162,6 +1179,7 @@ main .fipage .sec2 .big div .short {
 main .sipage {
   height: 140vh;
   min-height: 54em;
+  min-width: 1200px;
   color: #FFF5EC;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1253,6 +1271,7 @@ main .sipage div .t1 div h3, main .sipage div .t2 div h3, main .sipage div .t3 d
   color: black;
   font-family: sans-serif;
   font-size: 1em;
+  white-space: nowrap;
   font-weight: 500;
   line-height: 2;
   margin-left: 1.5em;
@@ -1286,7 +1305,7 @@ main .sipage div .t5 {
 main .sipage div .t6 {
   grid-area: t6;
 }
-@media only screen and (max-width: 968px) {
+@media only screen and (max-width: 480px) {
   main .sipage {
     width: 100vw;
     height: -webkit-fit-content;
@@ -1295,6 +1314,7 @@ main .sipage div .t6 {
     row-gap: 0;
     min-height: 0;
     margin-top: 0;
+    min-width: 0;
   }
   main .sipage h2 {
     font-size: 1rem;
@@ -1339,6 +1359,7 @@ main .sepage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-width: 1200px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
@@ -1346,12 +1367,6 @@ main .sepage {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-main .sepage div {
-  -ms-flex-preferred-size: 35%;
-  flex-basis: 35%;
-  height: 85%;
-  margin: auto 0;
 }
 main .sepage .d1 {
   display: -webkit-box;
@@ -1428,7 +1443,7 @@ main .sepage .d2 .phone {
   height: 100%;
   margin: 0 0 0 auto;
 }
-@media only screen and (max-width: 968px) {
+@media only screen and (max-width: 480px) {
   main .sepage {
     width: 100vw;
     -webkit-box-orient: vertical;
@@ -1441,6 +1456,7 @@ main .sepage .d2 .phone {
     height: fit-content;
     gap: 0;
     margin-top: 5em;
+    min-width: 0;
   }
   main .sepage .d2 {
     height: -webkit-fit-content;
@@ -1485,6 +1501,7 @@ main .epage {
   background-color: #FFF5EC;
   height: 90vh;
   min-height: 32em;
+  min-width: 1200px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1621,13 +1638,14 @@ main .epage div .icons p {
   margin: 0;
   font-size: 0.6em;
 }
-@media only screen and (max-width: 968px) {
+@media only screen and (max-width: 480px) {
   main .epage {
     width: 100vw;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     min-height: 0;
+    min-width: 0;
   }
   main .epage .img {
     top: 2em;
@@ -1677,8 +1695,10 @@ main .epage div .icons p {
 main .footer {
   background-color: #fe043c;
   height: 7em;
+  min-width: 1200px;
   border-top: 2px solid blue;
   z-index: 1;
+  min-width: 0;
 }
 main .footer h1, main .footer p {
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -1689,7 +1709,7 @@ main .footer h1, main .footer p {
 main .footer p {
   font-size: 0.7em;
 }
-@media only screen and (max-width: 968px) {
+@media only screen and (max-width: 480px) {
   main .footer {
     width: 100vw;
     height: 5em;
